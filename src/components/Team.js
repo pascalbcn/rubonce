@@ -28,8 +28,8 @@ const styles = {
     fontSize: 20
   },
   logoStyle: {
-    width: 60,
-    height: 60
+    width: 70,
+    height: 70
   }
 };
 

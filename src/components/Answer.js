@@ -24,8 +24,7 @@ class Answer extends Component {
         <TouchableHighlight
          style={styles.button}
          onPress={this.onPress}
-         underlaycolor={'darkgreen'}
-         activeOpacity={10}
+         underlayColor={'lightgreen'}
         >
          <Text style={styles.text}> {this.props.answerText} </Text>
         </TouchableHighlight>
@@ -42,12 +41,12 @@ const styles = StyleSheet.create({
   },
   button: {
     alignItems: 'center',
-    backgroundColor: 'lightgreen',
-    padding: 10
+    backgroundColor: 'darkgreen',
+    padding: 5
   },
   text: {
-    fontSize: 20,
-    color: 'black'
+    fontSize: 30,
+    color: 'white'
   },
   countContainer: {
     alignItems: 'center',

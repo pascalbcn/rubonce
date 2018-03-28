@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { Header, Team, Score, QuestionNumber, Question } from './src';
-import Answer from './src/Answer';
+import { Header, Team, Score, QuestionNumber, Question, Timer } from './src/components';
+import Answer from './src/components/Answer';
 
 class App extends Component {
   render() {
@@ -17,7 +17,7 @@ class App extends Component {
           >
             <Team teamName={'PSG'} logoLink={'https://i.ytimg.com/vi/l77_6iOa_us/maxresdefault.jpg'} />
             <Score scoreTeamA={'2'} scoreTeamB={'0'} />
-            <Team teamName={'Pd'} logoLink={'https://quizvoice.com/images/df136452c0b0bb9356286dd2aae418bd.jpg'} />
+            <Team teamName={'Tony'} logoLink={'https://quizvoice.com/images/df136452c0b0bb9356286dd2aae418bd.jpg'} />
           </View>
           <View
           style={{
@@ -33,7 +33,7 @@ class App extends Component {
             justifyContent: 'center'
           }}
           >
-            <Question question={'Memphis va-t-il marquer en deuxième mi-temps lamak ?'} />
+            <Question question={'Memphis va-t-il marquer en deuxième mi-temps ?'} />
           </View>
           <View
           style={{
@@ -41,6 +41,7 @@ class App extends Component {
             justifyContent: 'center'
           }}
           >
+          <Timer />
           <Answer answerText={'Jamar'} />
           <Answer answerText={'Allez ok'} />
         </View>
